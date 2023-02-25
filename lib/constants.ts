@@ -1,3 +1,4 @@
+export const GITHUB_REPOSITORY_PATH = 'https://github.com/yuhori/yuhori-farm'
 export const EXAMPLE_PATH = 'yuhori-farm'
 export const CMS_NAME = 'Markdown'
 export const HOME_OG_IMAGE_URL =
