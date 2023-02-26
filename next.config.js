@@ -1,9 +1,9 @@
-const urlPrefix = '/yuhori-farm'
+const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : ''
 
 // repository_name はそれぞれの値に置き換える
 module.exports = {
-  assetPrefix: process.env.GITHUB_ACTIONS && urlPrefix,
-  basePath: process.env.GITHUB_ACTIONS && urlPrefix,
+  assetPrefix: urlPrefix,
+  basePath: urlPrefix,
   trailingSlash: true,
   publicRuntimeConfig: { urlPrefix },
 };

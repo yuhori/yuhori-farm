@@ -29,6 +29,8 @@ jobs:
      # ビルドする
      - name: Build
        run: yarn build && yarn export
+       env: 
+         URL_PREFIX: yuhori-farm
 
      # GitHub Pages にデプロイする
      - name: Deploy
