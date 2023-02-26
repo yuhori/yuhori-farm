@@ -5,4 +5,5 @@ module.exports = {
   assetPrefix: process.env.GITHUB_ACTIONS && urlPrefix,
   basePath: process.env.GITHUB_ACTIONS && urlPrefix,
   trailingSlash: true,
+  publicRuntimeConfig: { urlPrefix },
 };
